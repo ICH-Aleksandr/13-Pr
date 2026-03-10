@@ -1,0 +1,14 @@
+import ProductList from "./components/productList/index";
+import Cart from "./components/cart/index";
+import "./App.css";
+
+function App() {
+  return (
+    <div className="container">
+      <ProductList />
+      <Cart />
+    </div>
+  );
+}
+
+export default App;
