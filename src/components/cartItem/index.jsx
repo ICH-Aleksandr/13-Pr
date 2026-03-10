@@ -5,17 +5,23 @@ import { removeFromCart, updateCartQuantity } from "../../redux/actions/index";
 
 function CartItem({ item, removeFromCart, updateCartQuantity }) {
   return (
-    <div>
+    <div className={styles.row}>
       <span>
-        {item.name}${item.price}.00
+        {item.name} ${item.price}.00
       </span>
       <input
         type="number"
         min="1"
         value={item.quantity}
         onChange={(e) => updateCartQuantity(item.id, parseInt(e.target.value))}
+        className={styles.input}
       />
-      <button onClick={() => removeFromCart(item.id)}>Remove</button>
+      <button
+        className={styles.removeBtn}
+        onClick={() => removeFromCart(item.id)}
+      >
+        Remove
+      </button>
     </div>
   );
 }

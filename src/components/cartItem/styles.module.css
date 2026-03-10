@@ -1,0 +1,16 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input {
+  width: 50px;
+  padding: 2px 4px;
+  text-align: center;
+}
+
+.removeBtn {
+  padding: 4px 8px;
+  cursor: pointer;
+}
